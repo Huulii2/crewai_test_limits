@@ -74,7 +74,7 @@
 ---
 
 # 🚀Crew
-
+**Example file:** ``mycrew``
 ## 🔹 Step Callback
  - A function that is called after each step of every agent
     - log the agent’s actions
@@ -169,6 +169,8 @@ def process_results(self, result):
 
 # 📌Task
 
+**Example file:** ``taskcrew``
+
 ## Conditional task
  - Based on the outcome of a previous task, it will be executed or not
 
@@ -230,6 +232,7 @@ def blog_writer_task(self) -> Task:
 ```
 
 ## 🛡️ Guardrail
+**Example file:** ``guardrail``
 - Checks the task output before proceeding to the next task.  
 - If the output is incorrect, the agent receives feedback and reattempts the task based on the provided error messages.  
 - With properly structured error messages, a lot of behavior can be enforced.  
@@ -328,7 +331,7 @@ def complex_validation(result: str) -> Tuple[bool, Any]:
 <a id="tool-custom"></a>
 
 # 🛠️Tool
-
+**Example file:** ``tool``
 ## 🔹 Custom Caching
  - Caching is on by default
  - Determines when to cache results based on specific conditions
@@ -407,7 +410,7 @@ def blog_writer(self) -> Agent:
 ---
 
 # 🧠Memory
-
+**Example file:** ``memory``
 ## Memory types
 
 ### 🔹 Entity memory
@@ -513,6 +516,7 @@ A fruit specified in the `crew.py` file is searched for in the knowledgebase by 
 ---
 
 # 🔄Flow
+**Example file:** ``flow``
 ## Flow basics
 ### 1️⃣ Create a flow project
 ```bash 
