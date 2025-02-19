@@ -7,59 +7,59 @@
 > 🔹 [Before Kickoff](#-before-kickoff)  
 > 🔹 [After Kickoff](#-after-kickoff)  
 > 
-## 📌 [Task](#📌task)  
+## 📌 [Task](#task)  
 > **[Conditional Task](#conditional-task)**  
->> 📜 ***[Taskcrew Example Details](#📜-taskcrew-example-details)***  
->>> 🔹 [Overview](#🔹-overview)  
->>> 🔹 [Workflow](#🔹-workflow)  
->>> 🔹 [Conditional Logic](#🔹-conditional-logic)  
->>> 🔹 [Expected Outcome](#🔹-expected-outcome)  
+>> 📜 ***[Taskcrew Example Details](#-taskcrew-example-details)***  
+>>> 🔹 [Overview](#-overview)  
+>>> 🔹 [Workflow](#-workflow)  
+>>> 🔹 [Conditional Logic](#-conditional-logic)  
+>>> 🔹 [Expected Outcome](#-expected-outcome)  
 
 > **[Human input](#human-input)**
 
-> **🛡️ [Guardrail](#🛡️-guardrail)**  
->> 🔹 [Complex Guardrail Example](#🔹-complex-guardrail-example)  
+> **🛡️ [Guardrail](#️-guardrail)**  
+>> 🔹 [Complex Guardrail Example](#-complex-guardrail-example)  
 
-## 🛠️ [Tool](#🛠️tool)  
-> 🔹 [Custom Caching](#🔹-custom-caching)  
-> 🔹 [StructuredTool](#🔹-structuredtool)  
-> 🔹 [Forcing Tool Output as Result](#🔹-forcing-tool-output-as-result)  
+## 🛠️ [Tool](#️tool)  
+> 🔹 [Custom Caching](#-custom-caching)  
+> 🔹 [StructuredTool](#-structuredtool)  
+> 🔹 [Forcing Tool Output as Result](#-forcing-tool-output-as-result)  
 
-## 🧠 [Memory](#🧠memory)  
+## 🧠 [Memory](#memory)  
 > **[Memory Types](#memory-types)**  
->> 🔹 [Entity Memory](#🔹-entity-memory)  
->> 🔹 [Knowledgebase](#🔹-knowledgebase)  
->> 🔹 [Short-Term Memory](#🔹-short-term-memory)  
->> 🔹 [Long-Term Memory](#🔹-long-term-memory)  
->> 🔹 [Latest Kickoff](#🔹-latest-kickoff)  
+>> 🔹 [Entity Memory](#-entity-memory)  
+>> 🔹 [Knowledgebase](#-knowledgebase)  
+>> 🔹 [Short-Term Memory](#-short-term-memory)  
+>> 🔹 [Long-Term Memory](#-long-term-memory)  
+>> 🔹 [Latest Kickoff](#-latest-kickoff)  
 
 > **[Testing](#testing)**  
->> 🔹 [Entity Memory Testing](#🔹-entity-memory-testing)  
->> 🔹 [Knowledgebase Testing](#🔹-knowledgebase-testing)  
->> 🔹 [Other Observations](#🔹-other-observations)  
+>> 🔹 [Entity Memory Testing](#-entity-memory-testing)  
+>> 🔹 [Knowledgebase Testing](#-knowledgebase-testing)  
+>> 🔹 [Other Observations](#-other-observations)  
 
-## 🔄 [Flow](#🔄flow)  
+## 🔄 [Flow](#flow)  
 > **[Flow Basics](#flow-basics)**  
 >> 1️⃣ [Create a Flow Project](#1️⃣-create-a-flow-project)  
 >> 2️⃣ [Project Structure](#2️⃣-project-structure)  
 >> 3️⃣ [Flow Example Code](#3️⃣-flow-example-code)  
 >> 4️⃣ [Install Dependencies](#4️⃣-install-dependencies)  
 >> 5️⃣ [Start Flow](#5️⃣-start-flow)  
->> ➕ [Add New Crew to Flow](#➕-add-new-crew-to-flow)  
+>> ➕ [Add New Crew to Flow](#-add-new-crew-to-flow)  
 
 > **[BaseModel](#basemodel)**  
 
 > **[Operands](#operands)**  
->> 🔹 [Or](#🔹-or)  
->> 🔹 [And](#🔹-and)  
+>> 🔹 [Or](#-or)  
+>> 🔹 [And](#-and)  
 
 > **[Router](#router)**  
 
 > **[Persistence - In Development](#persistence---in-development)**  
->> 🔹 [Class-Level Persistence](#🔹-class-level-persistence)  
->> 🔹 [Method-Level Persistence](#🔹-method-level-persistence)  
->> 🔹 [Custom FlowPersistence](#🔹-custom-flowpersistence)  
->> 🔹 [Persistence Memory](#🔹-persistence-memory)  
+>> 🔹 [Class-Level Persistence](#-class-level-persistence)  
+>> 🔹 [Method-Level Persistence](#-method-level-persistence)  
+>> 🔹 [Custom FlowPersistence](#-custom-flowpersistence)  
+>> 🔹 [Persistence Memory](#-persistence-memory)  
 
 > **[Plots](#plots)**  
 
