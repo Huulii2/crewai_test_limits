@@ -1,11 +1,11 @@
 # 📖 Contents  
 
-## 🚀 [Crew](#🚀crew)  
-> 🔹 [Step Callback](#🔹-step-callback)  
-> 🔹 [Task Callback](#🔹-task-callback)  
-> 🔹 [Crew Logs](#🔹-crew-logs)  
-> 🔹 [Before Kickoff](#🔹-before-kickoff)  
-> 🔹 [After Kickoff](#🔹-after-kickoff)  
+## 🚀 [Crew](#crew)  
+> 🔹 [Step Callback](#-step-callback)  
+> 🔹 [Task Callback](#-task-callback)  
+> 🔹 [Crew Logs](#-crew-logs)  
+> 🔹 [Before Kickoff](#-before-kickoff)  
+> 🔹 [After Kickoff](#-after-kickoff)  
 > 
 ## 📌 [Task](#📌task)  
 > **[Conditional Task](#conditional-task)**  
