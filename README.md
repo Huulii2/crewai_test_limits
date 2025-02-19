@@ -14,11 +14,14 @@ The goal is to document what works, what doesn’t, and how to best utilize Crew
 > 
 ## 📌 [Task](#task)  
 > **[Conditional Task](#conditional-task)**  
->> 📜 ***[Taskcrew Example Details](#-taskcrew-example-details)***  
->>> 🔹 [Overview](#-overview)  
->>> 🔹 [Workflow](#-workflow)  
->>> 🔹 [Conditional Logic](#-conditional-logic)  
->>> 🔹 [Expected Outcome](#-expected-outcome)  
+> **[Task basemodel output](#task-basemodel-output)**  
+
+> 📜 ***[Taskcrew Example Details](#-taskcrew-example-details)***  
+>> 🔹 [Overview](#-overview)  
+>> 🔹 [Workflow](#-workflow)  
+>> 🔹 [Conditional Logic](#-conditional-logic)  
+>> 🔹 [Expected Outcome](#-expected-outcome)  
+
 
 > **[Human input](#human-input)**
 
@@ -192,13 +195,26 @@ def data_processor_task(self) -> ConditionalTask:
         ...
     )
 ```
+## Task basemodel output
+```python
+class BlogPost(BaseModel):
+	Description: str = Field(contect="Blog post content")
 
-### 📜 Taskcrew example details
+@task
+def blog_writer_task(self) -> Task:
+    return Task(
+        ...
+        output_pydantic=BlogPost,
+        ...
+    )
+```
 
-#### 🔹 Overview
+## 📜 Taskcrew example details
+
+### 🔹 Overview
 This task flow ensures the generation of a well-structured blog post while enforcing a strict format for the research output. A conditional task is used to determine whether additional processing is required before writing the final blog.
 
-#### 🔹 Workflow
+### 🔹 Workflow
 
 1. **Research Task (blog_researcher_task)**
    - The **Research Agent** compiles a **bullet-point list** of key ideas for a blog post on a given topic.
@@ -213,13 +229,16 @@ This task flow ensures the generation of a well-structured blog post while enfor
    - The **Writer Agent** takes the refined bullet points and writes a full blog post.
    - The blog is formatted with engaging content based on the selected key points.
 
-#### 🔹 Conditional Logic
+### 🔹 Conditional Logic
 - **Condition:** The `data_processor_task` runs **only if** the number of bullet points is **not exactly 5**.
 - If the research output already contains **5 elements**, the processor is skipped, and the writer directly starts the blog creation.
 
-#### 🔹 Expected Outcome
+### 🔹 Expected Outcome
 - A **bullet-point list** containing exactly **5 key ideas**.
 - A **cohesive and well-structured blog post** based on the selected bullet points.
+
+
+
 
 ## Human input
 - Allows agents to request additional information 
@@ -402,6 +421,9 @@ print(result)  # Output: Call the API at https://example.com/api with parameters
 ```
 
 ## 🔹 Forcing Tool Output as Result
+
+- Currently not working
+
 ```python
 @agent
 def blog_writer(self) -> Agent:
