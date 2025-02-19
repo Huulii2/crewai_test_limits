@@ -5,8 +5,23 @@ from crewai.knowledge.source.pdf_knowledge_source import PDFKnowledgeSource
 from crewai.knowledge.source.csv_knowledge_source import CSVKnowledgeSource
 from crewai.knowledge.source.excel_knowledge_source import ExcelKnowledgeSource
 from crewai.knowledge.source.json_knowledge_source import JSONKnowledgeSource
-from chromadbcrew.chromadb_knowledge_source import ChromaDBKnowledgeSource
+from chromadb_knowledge_source import ChromaDBKnowledgeSource
 from typing import List
+
+# Loads all knowledge from crewai knowledge directory
+# 
+# Example:
+# --------------------
+# knowledge_loader = KnowledgeLoader()
+# knowledge_list = knowledge_loader.load_knowledge()
+# 
+# @agent
+# def my_agent(self) -> Agent:
+#     return Agent(
+#         config=self.agents_config['my_agent'],
+#         knowledge_sources=knowledge_list,
+#     )
+# --------------------
 
 class KnowledgeLoader:
     """Dynamically loads knowledge sources from the CrewAI knowledge folder."""
