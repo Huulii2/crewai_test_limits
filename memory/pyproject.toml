@@ -1,0 +1,25 @@
+[project]
+name = "memory_0"
+version = "0.1.0"
+description = "memory_0 using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.100.1,<1.0.0",
+    "docling>=2.18.0",
+    "ollama>=0.4.7",
+]
+
+[project.scripts]
+memory_0 = "memory_0.main:run"
+run_crew = "memory_0.main:run"
+train = "memory_0.main:train"
+replay = "memory_0.main:replay"
+test = "memory_0.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

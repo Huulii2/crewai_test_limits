@@ -1,0 +1,1 @@
+Melon: A sweet and juicy fruit with a green rind and typically a pink or orange flesh.

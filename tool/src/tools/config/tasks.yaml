@@ -1,0 +1,9 @@
+writer_task:
+  description: >
+    Write simple math homework using the multiplication_tool.
+    Make sure you use the tool's cache if avaible.
+  expected_output: >
+    A list of a few simple math problems and their answear, also add if you used the tool's cache and what data did you get in JSON.
+  agent: writer
+
+

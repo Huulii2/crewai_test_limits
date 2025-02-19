@@ -1,0 +1,6 @@
+knowledge_agent_task:
+  description: >
+    Find all the relevant information about CrewAI from the knowledge base.
+  expected_output: >
+    All the relevant information about crewai from the knowledgebase, nothing else.
+  agent: knowledge_agent

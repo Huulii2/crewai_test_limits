@@ -1,0 +1,42 @@
+#################################################
+# Entity memory testing
+
+# fruit_vendor_task:
+#   description: >
+#     Choose a fruit from the list and write a short description about it.
+#     If you find the current fruit in your entity memory, then choose an another fruit. 
+#     If no fruit left, then the fruit description from the entity memory and use it.
+#   expected_output: >
+#     The choosen fruit name and a short description about it.
+#     Formatted as a JSON like format
+#   agent: fruit_vendor
+
+#################################################
+# Knowledgebase testing
+
+json_manager_task:
+  # Use this without specifing the reading tools.
+  # description: >
+  #   Read the contents of fruits.json and fruits_details.json. You know these files from the knowledgebase.
+  #   If there any fruits in fruits.json that are not in fruits_details.json, then choose one missing fruit fruit and add fruits_detal.json the fruits name, also give it a description.
+  #   If there was no missing fruit, then add a new fruit to fruits.json, but dont add it to fruits_details.json.
+  #   Ensure the JSON structure remains valid and correctly formatted.
+
+  # Use this with json reading tools.
+  description:
+    Read the contents of fruits.json and fruits_details.json. These files are in the "knowledge" library.
+    If there any fruits in fruits.json that are not in fruits_details.json, then choose one missing fruit and add fruits_detal.json the fruits name, also give it a description.
+    If there was no missing fruit, then add a new fruit to fruits.json, but dont add it to fruits_details.json.
+    Ensure the JSON structure remains valid and correctly formatted.
+  expected_output: >
+    The new contents of the fruits_details.json properly formatted in JSON.
+  agent: json_manager
+
+answering_agent_task:
+  description: >
+    You have the fruit names and description in knowledge, get the {fruit} description and answear with it.
+  expected_output: >
+    The {fruit} name and description.
+  agent: answering_agent
+
+#################################################

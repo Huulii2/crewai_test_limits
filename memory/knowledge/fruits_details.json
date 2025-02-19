@@ -1,0 +1,18 @@
+{
+    "Apple": {
+        "name": "Apple",
+        "description": "A sweet and crunchy fruit, often red, green, or yellow in color, grown in many parts of the world."
+    },
+    "Banana": {
+        "name": "Banana",
+        "description": "A tropical fruit with a yellow peel and soft, sweet flesh."
+    },
+    "Melon": {
+        "name": "Melon",
+        "description": "A sweet and juicy fruit with a green rind and typically a pink or orange flesh."
+    },
+    "Lemon": {
+        "name": "Lemon",
+        "description": "A sour and tart fruit, often yellow in color, used for its juice and peel."
+    }
+}

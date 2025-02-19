@@ -1,0 +1,34 @@
+blog_researcher_task:
+  description: >
+    Research and compile key insights about {topic}. 
+    Focus on gathering valuable, well-supported points that provide depth and clarity on the subject.
+    Avoid generic statements—ensure the information is informative, relevant, and engaging.
+  expected_output: >
+    A bullet-point list of essential insights about {topic}, with each point being concise yet informative.
+  agent: blog_researcher
+
+data_processor_task:
+  description: >
+    Refine and filter the collected insights, ensuring only the five most impactful points remain.
+    Prioritize relevance, uniqueness, and clarity to maintain high-quality content.
+  expected_output: >
+    A refined bullet-point list containing exactly five high-value insights about {topic}.
+  agent: data_processor
+  context:
+    - blog_researcher_task
+
+blog_writer_task:
+  description: >
+    Craft a compelling and engaging blog post about {topic} based on the provided key insights.
+    Ensure the article is well-structured, easy to read, and maintains a natural flow.
+    The post should include:
+      - A captivating introduction that hooks the reader.
+      - Detailed explanations of each bullet point, keeping each section around 100 words.
+      - A strong conclusion that reinforces the main takeaways.
+  expected_output: >
+    A polished, well-structured blog post on {topic}, incorporating the five selected insights, 
+    with each section around 100 words while maintaining clarity and impact.
+  agent: blog_writer
+  context:
+    - data_processor_task
+

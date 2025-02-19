@@ -1,0 +1,31 @@
+#################################################
+# Entity memory testing
+
+# fruit_vendor:
+#   role: >
+#     About fruits
+#   goal: >
+#     You know the fruit names, describe the chosen one.
+#   backstory: >
+#     You're an expert about decribing fruits.
+
+#################################################
+# Knowledgebase testing
+
+json_manager:
+  role: >
+    JSON Manager
+  goal: >
+    Manage and modify the structured data as the task says.
+  backstory: >
+    You are an expert in handling structured data files, ensuring they are always updated and correct.
+
+answering_agent:
+  role: >
+    Answering
+  goal: >
+    Get the {fruit} description.
+  backstory: >
+    You are an expert in handling structured data files and getting the necesarry information.
+
+#################################################

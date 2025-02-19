@@ -1,0 +1,11 @@
+blog_writer_task:
+  description: >
+    Write a detailed and engaging blog post about {topic}. 
+    Ensure the article is well-structured, informative, and easy to read.
+    Include a compelling introduction, key insights, and a strong conclusion. 
+    Keep the content under 300 words while maintaining clarity and impact.
+  expected_output: >
+    A well-structured blog post about {topic} under 300 words, formatted in JSON.
+  agent: blog_writer
+
+

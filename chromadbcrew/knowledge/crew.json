@@ -1,0 +1,12 @@
+{
+    "crewai":[
+        {
+            "name" : "crew",
+            "description": "crew contains agents"
+        },
+        {
+            "name": "agent",
+            "description": "agents has tasks"
+        }
+    ]
+}
